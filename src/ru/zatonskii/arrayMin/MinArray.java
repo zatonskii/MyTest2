@@ -4,6 +4,8 @@ public class MinArray {
     public static void main(String[] args) {
         DoOne();
         DoTwo();
+
+        ArrayPlus();
     }
 
     public static void DoOne() {
@@ -28,6 +30,24 @@ public class MinArray {
                 max = list[i];
         }
         System.out.println("Max is " + max);
+    }
+
+    public static void RandomArray() {
+        int [] arrayList = new int[8];
+        for (int i = 0; i < arrayList.length; i++) {
+            arrayList[i] = (int) (Math.random() * 10);
+            System.out.print(arrayList[i]);
+            System.out.println(" ");
+        }
+    }
+    public static void ArrayPlus() {
+        int[] arrayPl ={1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
+        int plus = arrayPl.length;
+        for (int i = 0; i < plus; i++) {
+            if (arrayPl[i] < 6) arrayPl[i] = arrayPl[i] * 2;
+        }
+        for (int i = 0; i < plus; i++)
+        System.out.println(arrayPl[i]);
     }
 }
 
